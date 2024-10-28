@@ -39,6 +39,9 @@ const teamMembers = [
 
 let cardsContainer = document.getElementById('cards');
 
+//add function to create element and give it classes
+//modal WIP
+
 for (let i = 0; i < teamMembers.length; i++) {
   let card = document.createElement("div");
   card.classList.add("col-lg-4");
@@ -48,8 +51,12 @@ for (let i = 0; i < teamMembers.length; i++) {
   imgContainer.classList.add("col-4", "img-container", "p-0")
   imgContainer.innerHTML = `<img src="./${teamMembers[i].img}" width="100%">`
   let description = document.createElement("div");
-  description.classList.add("col", "bg-dark", "ps-4", "description");
-  description.innerHTML = `<p>${teamMembers[i].name.toUpperCase()}</p><p>${teamMembers[i].role}</p><a href="#">${teamMembers[i].email}</a>`
+  description.classList.add("col-8", "bg-dark", "ps-4", "description");
+  description.innerHTML = `
+    <p>${teamMembers[i].name.toUpperCase()}</p>
+    <p>${teamMembers[i].role}</p>
+    <a href="#">${teamMembers[i].email}</a>
+    `
 
   cardRows.append(imgContainer)
   cardRows.append(description)
