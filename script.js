@@ -46,10 +46,10 @@ for (let i = 0; i < teamMembers.length; i++) {
   cardRows.classList.add("row");
   let imgContainer = document.createElement("div");
   imgContainer.classList.add("col-4", "img-container")
-  imgContainer.innerHTML = `<img src="./${teamMembers[i].img}">`
+  imgContainer.innerHTML = `<img src="./${teamMembers[i].img}" width="100%">`
   let description = document.createElement("div");
   description.classList.add("col");
-  description.innerHTML = `<p>${teamMembers[i].name.toUpperCase()}</p><p>${teamMembers[i].role}</p><p>${teamMembers[i].email}</p>`
+  description.innerHTML = `<p>${teamMembers[i].name.toUpperCase()}</p><p>${teamMembers[i].role}</p><a href="#">${teamMembers[i].email}</a>`
   //cardsContainer.append(card, cardRows, imgContainer)
   cardRows.append(imgContainer)
   cardRows.append(description)
