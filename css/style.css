@@ -1,0 +1,9 @@
+.debug {
+    border: 2px dotted red;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
