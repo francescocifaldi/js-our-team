@@ -41,16 +41,16 @@ let cardsContainer = document.getElementById('cards');
 
 for (let i = 0; i < teamMembers.length; i++) {
   let card = document.createElement("div");
-  card.classList.add("col-lg-4", "debug");
+  card.classList.add("col-lg-4");
   let cardRows = document.createElement("div");
-  cardRows.classList.add("row");
+  cardRows.classList.add("row", "p-2");
   let imgContainer = document.createElement("div");
-  imgContainer.classList.add("col-4", "img-container")
+  imgContainer.classList.add("col-4", "img-container", "p-0")
   imgContainer.innerHTML = `<img src="./${teamMembers[i].img}" width="100%">`
   let description = document.createElement("div");
-  description.classList.add("col");
+  description.classList.add("col", "bg-dark", "ps-4", "description");
   description.innerHTML = `<p>${teamMembers[i].name.toUpperCase()}</p><p>${teamMembers[i].role}</p><a href="#">${teamMembers[i].email}</a>`
-  //cardsContainer.append(card, cardRows, imgContainer)
+
   cardRows.append(imgContainer)
   cardRows.append(description)
   card.append(cardRows)

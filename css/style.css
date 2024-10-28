@@ -2,8 +2,21 @@
     border: 2px dotted red;
 }
 
+html {
+    font-family: "DynaPuff", serif;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.main-content * {
+    color: white;
+}
+
+.title {
+    font-weight: bold;
+    color: pink;
 }
