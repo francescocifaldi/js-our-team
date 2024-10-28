@@ -2,8 +2,8 @@
     border: 2px dotted red;
 }
 
-html {
-    font-family: "DynaPuff", serif;
+html * {
+    font-family: "DynaPuff", sans-serif
 }
 
 * {
